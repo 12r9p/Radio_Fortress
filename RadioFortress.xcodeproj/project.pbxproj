@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B26D0EA66F70BB449914424 /* WiFiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A08CB1D60603D1DEC050B /* WiFiState.swift */; };
+		3113FF6D8A35498A0F27E054 /* MenuBarIconRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C3FC4E14712B2CD0CA00B7 /* MenuBarIconRenderer.swift */; };
+		4E563E6BAA0FD5F6DF12400B /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3EAEB37C53813E22315FA /* Color+Hex.swift */; };
+		56B1E8AA69C2B729027FAC5B /* VoiceKeepingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D498070EFE07DA1F7163C3A1 /* VoiceKeepingService.swift */; };
+		6E5DCFCA0F9C5159DF2DD0C8 /* ConstellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43694B0F79DF9AB1DE5ED2F /* ConstellationView.swift */; };
+		7B70CCBDC9502A7D4C49488A /* WiFiMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4994E3B814B3C46C08EF980 /* WiFiMonitor.swift */; };
+		7D688AB277D2203FFD2655C2 /* DetailPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F064AA24C22A993665A4E3F4 /* DetailPopover.swift */; };
+		934702EEB57B89F5CFC78863 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F956A74CCECFFC3AD23ED28F /* CoreWLAN.framework */; };
+		9F69E1F211D1F668973EF6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829A9E7F8CC568C6915445BB /* Assets.xcassets */; };
+		B721DDFEE65D2938C907ADDE /* RadioFortressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86473B641F9BCEE826CE1EB2 /* RadioFortressApp.swift */; };
+		C8D546BA1C858305F0E329A8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0D4262159DCDFC174C6B82 /* CoreLocation.framework */; };
+		CB7163C2990F21B7FE84130E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713BC1693CD99A7AA2C8FCD6 /* AppDelegate.swift */; };
+		ED60A4A0F560908CF1D85D39 /* PingMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD6A050E08EA9DF697838C /* PingMonitor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		094B7D6237F7660DCEC5C0C1 /* RadioFortress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioFortress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BE7ADC4ED32C44C3A9D821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		301A08CB1D60603D1DEC050B /* WiFiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiState.swift; sourceTree = "<group>"; };
+		3C0D4262159DCDFC174C6B82 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreLocation.framework; sourceTree = "<group>"; };
+		40BD6A050E08EA9DF697838C /* PingMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingMonitor.swift; sourceTree = "<group>"; };
+		713BC1693CD99A7AA2C8FCD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		829A9E7F8CC568C6915445BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F3EAEB37C53813E22315FA /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		86473B641F9BCEE826CE1EB2 /* RadioFortressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioFortressApp.swift; sourceTree = "<group>"; };
+		D43694B0F79DF9AB1DE5ED2F /* ConstellationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationView.swift; sourceTree = "<group>"; };
+		D498070EFE07DA1F7163C3A1 /* VoiceKeepingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceKeepingService.swift; sourceTree = "<group>"; };
+		D4994E3B814B3C46C08EF980 /* WiFiMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiMonitor.swift; sourceTree = "<group>"; };
+		F064AA24C22A993665A4E3F4 /* DetailPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPopover.swift; sourceTree = "<group>"; };
+		F7C3FC4E14712B2CD0CA00B7 /* MenuBarIconRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarIconRenderer.swift; sourceTree = "<group>"; };
+		F956A74CCECFFC3AD23ED28F /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreWLAN.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A93E4E103D387B561873F7AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934702EEB57B89F5CFC78863 /* CoreWLAN.framework in Frameworks */,
+				C8D546BA1C858305F0E329A8 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DA3BAA63650781A136BBEC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C0D4262159DCDFC174C6B82 /* CoreLocation.framework */,
+				F956A74CCECFFC3AD23ED28F /* CoreWLAN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		110BCC17BB42D7D7B4D2A0CD = {
+			isa = PBXGroup;
+			children = (
+				6DFE704E1F98D92E80F51783 /* RadioFortress */,
+				0DA3BAA63650781A136BBEC7 /* Frameworks */,
+				9D5C352218D28621A75E949E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DFE704E1F98D92E80F51783 /* RadioFortress */ = {
+			isa = PBXGroup;
+			children = (
+				713BC1693CD99A7AA2C8FCD6 /* AppDelegate.swift */,
+				829A9E7F8CC568C6915445BB /* Assets.xcassets */,
+				13BE7ADC4ED32C44C3A9D821 /* Info.plist */,
+				86473B641F9BCEE826CE1EB2 /* RadioFortressApp.swift */,
+				A2520314EA74E1D926B30371 /* Extensions */,
+				EBB77158E78A50334EFBE222 /* Models */,
+				7311BBE0BAF39DD71B57A67A /* Services */,
+				87375A0D9FAB096A82B3F168 /* Views */,
+			);
+			path = RadioFortress;
+			sourceTree = "<group>";
+		};
+		7311BBE0BAF39DD71B57A67A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				40BD6A050E08EA9DF697838C /* PingMonitor.swift */,
+				D498070EFE07DA1F7163C3A1 /* VoiceKeepingService.swift */,
+				D4994E3B814B3C46C08EF980 /* WiFiMonitor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		87375A0D9FAB096A82B3F168 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D43694B0F79DF9AB1DE5ED2F /* ConstellationView.swift */,
+				F064AA24C22A993665A4E3F4 /* DetailPopover.swift */,
+				F7C3FC4E14712B2CD0CA00B7 /* MenuBarIconRenderer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D5C352218D28621A75E949E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				094B7D6237F7660DCEC5C0C1 /* RadioFortress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2520314EA74E1D926B30371 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84F3EAEB37C53813E22315FA /* Color+Hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EBB77158E78A50334EFBE222 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				301A08CB1D60603D1DEC050B /* WiFiState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1784E59CB44EAB418B10C3F8 /* RadioFortress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08856434B0D994F1FDED2E8E /* Build configuration list for PBXNativeTarget "RadioFortress" */;
+			buildPhases = (
+				22E35A4901772AA2EA69DE85 /* Sources */,
+				532F35595B420EBC7289E75A /* Resources */,
+				A93E4E103D387B561873F7AE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadioFortress;
+			packageProductDependencies = (
+			);
+			productName = RadioFortress;
+			productReference = 094B7D6237F7660DCEC5C0C1 /* RadioFortress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54451483C1E42F9B0846959A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 1AFB01606F48925F6FF5B42A /* Build configuration list for PBXProject "RadioFortress" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 110BCC17BB42D7D7B4D2A0CD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1784E59CB44EAB418B10C3F8 /* RadioFortress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		532F35595B420EBC7289E75A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F69E1F211D1F668973EF6CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22E35A4901772AA2EA69DE85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7163C2990F21B7FE84130E /* AppDelegate.swift in Sources */,
+				4E563E6BAA0FD5F6DF12400B /* Color+Hex.swift in Sources */,
+				6E5DCFCA0F9C5159DF2DD0C8 /* ConstellationView.swift in Sources */,
+				7D688AB277D2203FFD2655C2 /* DetailPopover.swift in Sources */,
+				3113FF6D8A35498A0F27E054 /* MenuBarIconRenderer.swift in Sources */,
+				ED60A4A0F560908CF1D85D39 /* PingMonitor.swift in Sources */,
+				B721DDFEE65D2938C907ADDE /* RadioFortressApp.swift in Sources */,
+				56B1E8AA69C2B729027FAC5B /* VoiceKeepingService.swift in Sources */,
+				7B70CCBDC9502A7D4C49488A /* WiFiMonitor.swift in Sources */,
+				1B26D0EA66F70BB449914424 /* WiFiState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		231AF66F615943E4C3E74553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		6243F2594F70E98FB9E2CF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		73644539BE907544123D0DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = RadioFortress/RadioFortress.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = RadioFortress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takumi.RadioFortress;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A84C1DF666AC5B7D6C867D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = RadioFortress/RadioFortress.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = RadioFortress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takumi.RadioFortress;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08856434B0D994F1FDED2E8E /* Build configuration list for PBXNativeTarget "RadioFortress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84C1DF666AC5B7D6C867D45 /* Debug */,
+				73644539BE907544123D0DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1AFB01606F48925F6FF5B42A /* Build configuration list for PBXProject "RadioFortress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6243F2594F70E98FB9E2CF11 /* Debug */,
+				231AF66F615943E4C3E74553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54451483C1E42F9B0846959A /* Project object */;
+}

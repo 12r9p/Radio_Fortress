@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Dockアイコンを非表示にし、メニューバー専用アプリとして動作させる -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- CoreWLANがロケーションサービスを要求する場合の説明文 -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>WiFi接続情報（SSID、信号強度）を取得するためにロケーションサービスへのアクセスが必要です。</string>
+
+    <key>CFBundleName</key>
+    <string>Radio Fortress</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>Radio Fortress</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+
+    <key>LSMinimumSystemVersion</key>
+    <string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+</dict>
+</plist>

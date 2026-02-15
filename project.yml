@@ -1,0 +1,36 @@
+name: RadioFortress
+
+options:
+  bundleIdPrefix: com.takumi
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+
+targets:
+  RadioFortress:
+    type: application
+    platform: macOS
+    sources:
+      - path: RadioFortress
+        excludes:
+          - "*.entitlements"
+    settings:
+      base:
+        INFOPLIST_FILE: RadioFortress/Info.plist
+        CODE_SIGN_ENTITLEMENTS: RadioFortress/RadioFortress.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.takumi.RadioFortress
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGNING_REQUIRED: "NO"
+        ENABLE_HARDENED_RUNTIME: "NO"
+    dependencies:
+      - framework: CoreWLAN.framework
+        embed: false
+      - framework: CoreLocation.framework
+        embed: false
