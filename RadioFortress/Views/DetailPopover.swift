@@ -9,6 +9,7 @@ struct DetailPopover: View {
     @ObservedObject var wifiMonitor: WiFiMonitor
     @ObservedObject var pingMonitor: PingMonitor
     @ObservedObject var voiceService: VoiceKeepingService
+    @ObservedObject var launchService = LaunchAtLoginService.shared
 
     var body: some View {
         VStack(spacing: 0) {
@@ -20,7 +21,7 @@ struct DetailPopover: View {
             dividerLine
             footerSection
         }
-        .frame(width: 340, height: 500)
+        .frame(width: 340, height: 540)
         .background(.ultraThinMaterial)
     }
 
@@ -172,26 +173,79 @@ struct DetailPopover: View {
     // MARK: - フッター（Voice Mode Switch）
 
     private var footerSection: some View {
-        HStack {
-            Toggle(isOn: $voiceService.isEnabled) {
-                HStack(spacing: 6) {
-                    Image(systemName: "mic.fill")
-                        .font(.system(size: 10))
-                        .foregroundStyle(voiceService.isEnabled ? ConstellationColors.poor : .secondary)
-                    
-                    VStack(alignment: .leading, spacing: 1) {
-                        Text("Voice Priority Mode")
-                            .font(.system(size: 11, weight: .medium))
-                            .foregroundStyle(voiceService.isEnabled ? .primary : .secondary)
-                        Text(voiceService.isEnabled ? "Keeping Connection Active (QoS VO)" : "Standard Mode")
-                            .font(.system(size: 9))
-                            .foregroundStyle(.tertiary)
+        VStack(spacing: 12) {
+            // Launch at Login Switch
+            HStack {
+                Toggle(isOn: $launchService.isEnabled) {
+                    HStack(spacing: 6) {
+                        Image(systemName: "arrow.up.circle.fill")
+                            .font(.system(size: 10))
+                            .foregroundStyle(launchService.isEnabled ? .primary : .secondary)
+                        
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text("Launch at Login")
+                                .font(.system(size: 11, weight: .medium))
+                                .foregroundStyle(launchService.isEnabled ? .primary : .secondary)
+                            Text("Automatically start Radio Fortress")
+                                .font(.system(size: 9))
+                                .foregroundStyle(.tertiary)
+                        }
                     }
                 }
+                .toggleStyle(SwitchToggleStyle(tint: .secondary))
+                
+                Spacer()
             }
-            .toggleStyle(SwitchToggleStyle(tint: ConstellationColors.poor)) // Voiceモードは赤系統で強調
+
+            Divider().opacity(0.3)
+
+            // Voice Mode Switch
+            HStack {
+                Toggle(isOn: $voiceService.isEnabled) {
+                    HStack(spacing: 6) {
+                        Image(systemName: "mic.fill")
+                            .font(.system(size: 10))
+                            .foregroundStyle(voiceService.isEnabled ? ConstellationColors.poor : .secondary)
+                        
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text("Voice Priority Mode")
+                                .font(.system(size: 11, weight: .medium))
+                                .foregroundStyle(voiceService.isEnabled ? .primary : .secondary)
+                            Text(voiceService.isEnabled ? "Keeping Connection Active (QoS VO)" : "Standard Mode")
+                                .font(.system(size: 9))
+                                .foregroundStyle(.tertiary)
+                        }
+                    }
+                }
+                .toggleStyle(SwitchToggleStyle(tint: ConstellationColors.poor)) // Voiceモードは赤系統で強調
+                
+                Spacer()
+            }
             
-            Spacer()
+            Divider().opacity(0.3)
+            
+            // Low Power Mode Switch
+            HStack {
+                Toggle(isOn: $pingMonitor.isLowPowerMode) {
+                    HStack(spacing: 6) {
+                        Image(systemName: "battery.100.bolt")
+                            .font(.system(size: 10))
+                            .foregroundStyle(pingMonitor.isLowPowerMode ? .yellow : .secondary)
+                        
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text("Low Power Mode (Stop Ping)")
+                                .font(.system(size: 11, weight: .medium))
+                                .foregroundStyle(pingMonitor.isLowPowerMode ? .primary : .secondary)
+                            Text("Stop background ping to save battery")
+                                .font(.system(size: 9))
+                                .foregroundStyle(.tertiary)
+                        }
+                    }
+                }
+                .toggleStyle(SwitchToggleStyle(tint: .yellow))
+                
+                Spacer()
+            }
         }
         .padding(.horizontal, 14)
         .padding(.vertical, 12)

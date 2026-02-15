@@ -16,6 +16,17 @@ final class PingMonitor: ObservableObject {
     @Published var currentRTT: Double = 0
     @Published var jitter: Double = 0
     @Published var isRunning: Bool = false
+    
+    // 省電力モード（Ping停止）
+    @Published var isLowPowerMode: Bool = false {
+        didSet {
+            if isLowPowerMode {
+                stopPing()
+            } else {
+                startPing()
+            }
+        }
+    }
 
     private var process: Process?
     private var pipe: Pipe?
@@ -27,11 +38,13 @@ final class PingMonitor: ObservableObject {
     private let targetHost = "8.8.8.8"
 
     init() {
-        startPing()
+        if !isLowPowerMode {
+            startPing()
+        }
     }
 
     func startPing() {
-        guard !isRunning else { return }
+        guard !isRunning, !isLowPowerMode else { return }
 
         let process = Process()
         process.executableURL = URL(fileURLWithPath: "/sbin/ping")

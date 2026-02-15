@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B26D0EA66F70BB449914424 /* WiFiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A08CB1D60603D1DEC050B /* WiFiState.swift */; };
 		3113FF6D8A35498A0F27E054 /* MenuBarIconRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C3FC4E14712B2CD0CA00B7 /* MenuBarIconRenderer.swift */; };
+		39B563827E30769A2640AD84 /* LaunchAtLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95070C0130028B96CE26C2D /* LaunchAtLoginService.swift */; };
 		4E563E6BAA0FD5F6DF12400B /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3EAEB37C53813E22315FA /* Color+Hex.swift */; };
 		56B1E8AA69C2B729027FAC5B /* VoiceKeepingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D498070EFE07DA1F7163C3A1 /* VoiceKeepingService.swift */; };
 		6E5DCFCA0F9C5159DF2DD0C8 /* ConstellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43694B0F79DF9AB1DE5ED2F /* ConstellationView.swift */; };
@@ -35,6 +36,7 @@
 		D43694B0F79DF9AB1DE5ED2F /* ConstellationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationView.swift; sourceTree = "<group>"; };
 		D498070EFE07DA1F7163C3A1 /* VoiceKeepingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceKeepingService.swift; sourceTree = "<group>"; };
 		D4994E3B814B3C46C08EF980 /* WiFiMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiMonitor.swift; sourceTree = "<group>"; };
+		E95070C0130028B96CE26C2D /* LaunchAtLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginService.swift; sourceTree = "<group>"; };
 		F064AA24C22A993665A4E3F4 /* DetailPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPopover.swift; sourceTree = "<group>"; };
 		F7C3FC4E14712B2CD0CA00B7 /* MenuBarIconRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarIconRenderer.swift; sourceTree = "<group>"; };
 		F956A74CCECFFC3AD23ED28F /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreWLAN.framework; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		7311BBE0BAF39DD71B57A67A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E95070C0130028B96CE26C2D /* LaunchAtLoginService.swift */,
 				40BD6A050E08EA9DF697838C /* PingMonitor.swift */,
 				D498070EFE07DA1F7163C3A1 /* VoiceKeepingService.swift */,
 				D4994E3B814B3C46C08EF980 /* WiFiMonitor.swift */,
@@ -200,6 +203,7 @@
 				4E563E6BAA0FD5F6DF12400B /* Color+Hex.swift in Sources */,
 				6E5DCFCA0F9C5159DF2DD0C8 /* ConstellationView.swift in Sources */,
 				7D688AB277D2203FFD2655C2 /* DetailPopover.swift in Sources */,
+				39B563827E30769A2640AD84 /* LaunchAtLoginService.swift in Sources */,
 				3113FF6D8A35498A0F27E054 /* MenuBarIconRenderer.swift in Sources */,
 				ED60A4A0F560908CF1D85D39 /* PingMonitor.swift in Sources */,
 				B721DDFEE65D2938C907ADDE /* RadioFortressApp.swift in Sources */,
@@ -339,7 +343,7 @@
 				CODE_SIGN_ENTITLEMENTS = RadioFortress/RadioFortress.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\".\"",
@@ -362,7 +366,7 @@
 				CODE_SIGN_ENTITLEMENTS = RadioFortress/RadioFortress.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\".\"",
